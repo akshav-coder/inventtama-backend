@@ -10,6 +10,10 @@ const purchaseSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    invoice_no: {
+      type: String,
+      required: true,
+    },
     tamarindType: {
       type: String,
       enum: ["Whole", "Raw Pod"],
@@ -27,10 +31,10 @@ const purchaseSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    amountPaid: {
-      type: Number,
-      required: true,
-    },
+    // amountPaid: {
+    //   type: Number,
+    //   required: true,
+    // },
     remainingBalance: {
       type: Number,
       required: true,
